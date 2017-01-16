@@ -1405,6 +1405,7 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
 
     @Override
     public void setCellInfoListRate(int rateInMillis) {
+        enforceModifyPermission();
         mPhone.setCellInfoListRate(rateInMillis);
     }
 
