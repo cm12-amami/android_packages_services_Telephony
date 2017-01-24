@@ -160,7 +160,7 @@ class SipProfileDb {
             return false;
         }
         if (!base.equals(file.getAbsoluteFile().getParentFile())) {
-            Log.w(TAG, "isChild, file is not a child of the base dir.");
+            Log.w(SipUtil.LOG_TAG, "isChild, file is not a child of the base dir.");
             EventLog.writeEvent(0x534e4554, "31530456", -1, "");
             return false;
         }
