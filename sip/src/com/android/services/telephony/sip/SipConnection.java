@@ -173,7 +173,7 @@ final class SipConnection extends Connection {
             // to stop it from ringing.
             log("onAnswer, IllegalArgumentException: " + e);
             EventLog.writeEvent(0x534e4554, "31752213", -1, "Invalid SDP.");
-            onReject()
+            onReject();
         }
     }
 
